@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-Tf-kKv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="78" id="43T-UL-iOc" customClass="FeedCell" customModule="WorkAround" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43T-UL-iOc" id="v0n-QY-wkZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-Mz-5yt">
+                                                    <rect key="frame" x="15" y="10" width="345" height="25"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwG-Jj-nT4">
+                                                    <rect key="frame" x="15" y="47" width="345" height="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LwG-Jj-nT4" secondAttribute="trailing" constant="15" id="CI2-lL-4BQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="LwG-Jj-nT4" secondAttribute="bottom" constant="13.5" id="Gld-lS-BOb"/>
+                                                <constraint firstItem="LwG-Jj-nT4" firstAttribute="top" secondItem="eBt-Mz-5yt" secondAttribute="bottom" constant="12" id="Hef-Lz-CAs"/>
+                                                <constraint firstItem="LwG-Jj-nT4" firstAttribute="leading" secondItem="v0n-QY-wkZ" secondAttribute="leading" constant="15" id="IDK-zs-dfE"/>
+                                                <constraint firstAttribute="trailing" secondItem="eBt-Mz-5yt" secondAttribute="trailing" constant="15" id="Xot-N2-L4W"/>
+                                                <constraint firstItem="eBt-Mz-5yt" firstAttribute="leading" secondItem="v0n-QY-wkZ" secondAttribute="leading" constant="15" id="sh0-Ex-Hnf"/>
+                                                <constraint firstItem="eBt-Mz-5yt" firstAttribute="top" secondItem="v0n-QY-wkZ" secondAttribute="top" constant="10" id="tbM-iT-r2o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="namelbl" destination="eBt-Mz-5yt" id="MNs-VY-wWH"/>
+                                            <outlet property="url" destination="LwG-Jj-nT4" id="jEr-hw-HV3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MX2-Tf-kKv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K8f-sV-e2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MX2-Tf-kKv" secondAttribute="bottom" id="Klw-Wb-1fS"/>
+                            <constraint firstAttribute="trailing" secondItem="MX2-Tf-kKv" secondAttribute="trailing" id="uGH-mk-cjM"/>
+                            <constraint firstItem="MX2-Tf-kKv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yjK-6U-cey"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FeedTable" destination="MX2-Tf-kKv" id="gtv-yN-wVo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103.2" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+</document>
