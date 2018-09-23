@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40EB4FA2157DB5200000310 /* pexels-photo-257840.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F40EB4F92157DB5200000310 /* pexels-photo-257840.jpeg */; };
 		F43504E7215215400092C229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43504E6215215400092C229 /* AppDelegate.swift */; };
 		F43504E9215215400092C229 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43504E8215215400092C229 /* ViewController.swift */; };
 		F43504EC215215400092C229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43504EA215215400092C229 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F40EB4F92157DB5200000310 /* pexels-photo-257840.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo-257840.jpeg"; sourceTree = "<group>"; };
 		F43504E32152153F0092C229 /* WorkAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43504E6215215400092C229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43504E8215215400092C229 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F4350506215244130092C229 /* FeedCell */,
 				F43504EA215215400092C229 /* Main.storyboard */,
 				F43504F0215215410092C229 /* Assets.xcassets */,
+				F40EB4F92157DB5200000310 /* pexels-photo-257840.jpeg */,
 				F43504F2215215410092C229 /* LaunchScreen.storyboard */,
 				F43504F5215215410092C229 /* Info.plist */,
 				F43504ED215215400092C229 /* WorkAround.xcdatamodeld */,
@@ -196,6 +199,7 @@
 				F43504F4215215410092C229 /* LaunchScreen.storyboard in Resources */,
 				F43504F1215215410092C229 /* Assets.xcassets in Resources */,
 				F43504EC215215400092C229 /* Main.storyboard in Resources */,
+				F40EB4FA2157DB5200000310 /* pexels-photo-257840.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
