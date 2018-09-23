@@ -14,7 +14,7 @@ class ServiceParser: NSObject {
     static func DoNetworkCall<T:Decodable>(view:UIView,url:String,parameter:[String:AnyObject],completion:@escaping(T)->())
     {
         let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-        activityIndicator.color = UIColor.black
+        activityIndicator.color = UIColor.blue
         activityIndicator.center = view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
