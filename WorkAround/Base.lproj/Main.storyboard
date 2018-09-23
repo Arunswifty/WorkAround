@@ -102,6 +102,27 @@
             </objects>
             <point key="canvasLocation" x="548" y="34.632683658170919"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="T7p-zs-nTG">
+            <objects>
+                <viewController id="hRZ-G7-Tl7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="90j-g5-e6F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pexels-photo-257840.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="xFc-Ov-iHg">
+                                <rect key="frame" x="4" y="50" width="368" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xex-3p-aVF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnR-or-06s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="742.5787106446777"/>
+        </scene>
     </scenes>
     <resources>
         <image name="pexels-photo-257840.jpeg" width="546" height="350"/>
