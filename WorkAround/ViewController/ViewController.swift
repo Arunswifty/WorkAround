@@ -12,36 +12,16 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     @IBOutlet var FeedTable: UITableView!
     var albumModels:[AlbumModels] = []
-    
-    struct instanceStruct {
-        var name:String? = "Hello"
-        var age:Int? = 12
-    }
-    
-    class retainClass{
-        var name:String?
-        var age:Int?
-        
-        init(name:String,age:Int) {
-            self.name = name
-            self.age = age
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-        let swiftyParam:[String:AnyObject] = [:]
         
-        ServiceParser.DoNetworkCall(view: self.view, url: "https://jsonplaceholder.typicode.com/photos", parameter:swiftyParam) { (feedmode:[AlbumObject]) in
-            
-            self.albumModels = feedmode.map({return AlbumModels(albums: $0)})
-
+        ApiClient.doCall(view: self.view) { (albumObject) in
+            self.albumModels = albumObject.map({return AlbumModels(albums: $0)})
             self.FeedTable.dataSource = self
             self.FeedTable.reloadData()
         }
-        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
